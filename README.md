@@ -1,3 +1,3 @@
 # DolarPy-Windows
 
-Version Windows para DolarPy https://dolar.melizeche.com/
+Versión Windows para DolarPy https://dolar.melizeche.com/
