@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+	x:Class="DolarPy.AppShell"
+	xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:local="clr-namespace:DolarPy"
+	xmlns:views="clr-namespace:DolarPy.Views">
+
+	<TabBar>
+		<ShellContent
+			Title="Main"
+			Icon="iconblank.png"
+			ContentTemplate="{DataTemplate views:MainPage}" />
+		<ShellContent
+			Title="ListDetail"
+			Icon="iconlistdetail.png"
+			ContentTemplate="{DataTemplate views:ListDetailPage}" />
+		<ShellContent
+			Title="Sample"
+			Icon="iconsample.png"
+			ContentTemplate="{DataTemplate views:SamplePage}" />
+		<ShellContent
+			Title="Map"
+			Icon="iconmap.png"
+			ContentTemplate="{DataTemplate views:MapPage}" />
+		<ShellContent
+			Title="Localization"
+			Icon="iconlocalization.png"
+			ContentTemplate="{DataTemplate views:LocalizationPage}" />
+		<ShellContent
+			Title="ExampleFontAwesomeUsage"
+			ContentTemplate="{DataTemplate views:ExampleFontAwesomeUsagePage}"
+			Icon="iconfontawesome.png" />
+		<ShellContent
+			Title="ExampleMaterialFontUsage"
+			ContentTemplate="{DataTemplate views:ExampleMaterialFontUsagePage}"
+			Icon="iconmaterial.png" />
+		<ShellContent
+			Title="Lottie"
+			Icon="iconlottie.png"
+			ContentTemplate="{DataTemplate views:LottiePage}" />
+	</TabBar>
+</Shell>
