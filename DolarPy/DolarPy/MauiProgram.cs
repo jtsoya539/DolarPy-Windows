@@ -34,7 +34,10 @@ public static class MauiProgram
 		builder.Services.AddSingleton<MainPage>();
 
 		builder.Services.AddTransient<SampleDataService>();
-		builder.Services.AddTransient<ListDetailDetailViewModel>();
+
+        builder.Services.AddTransient<DolarPyService>();
+
+        builder.Services.AddTransient<ListDetailDetailViewModel>();
 		builder.Services.AddTransient<ListDetailDetailPage>();
 
 		builder.Services.AddSingleton<ListDetailViewModel>();
@@ -65,6 +68,18 @@ public static class MauiProgram
 
 		builder.Services.AddSingleton<LottiePage>();
 
-		return builder.Build();
+        builder.Services.AddSingleton<InfoViewModel>();
+        builder.Services.AddSingleton<InfoPage>();
+
+        builder.Services.AddSingleton<LocationsViewModel>();
+        builder.Services.AddSingleton<LocationsPage>();
+
+        builder.Services.AddSingleton<ProviderDetailViewModel>();
+        builder.Services.AddSingleton<ProviderDetailPage>();
+
+        builder.Services.AddSingleton<ProvidersViewModel>();
+        builder.Services.AddSingleton<ProvidersPage>();
+
+        return builder.Build();
 	}
 }

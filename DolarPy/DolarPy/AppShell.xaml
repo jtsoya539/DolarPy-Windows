@@ -1,43 +1,61 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <Shell
-	x:Class="DolarPy.AppShell"
-	xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-	xmlns:local="clr-namespace:DolarPy"
-	xmlns:views="clr-namespace:DolarPy.Views">
+    x:Class="DolarPy.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:DolarPy"
+    xmlns:views="clr-namespace:DolarPy.Views">
 
-	<TabBar>
-		<ShellContent
-			Title="Main"
-			Icon="iconblank.png"
-			ContentTemplate="{DataTemplate views:MainPage}" />
-		<ShellContent
-			Title="ListDetail"
-			Icon="iconlistdetail.png"
-			ContentTemplate="{DataTemplate views:ListDetailPage}" />
-		<ShellContent
-			Title="Sample"
-			Icon="iconsample.png"
-			ContentTemplate="{DataTemplate views:SamplePage}" />
-		<ShellContent
-			Title="Map"
-			Icon="iconmap.png"
-			ContentTemplate="{DataTemplate views:MapPage}" />
-		<ShellContent
-			Title="Localization"
-			Icon="iconlocalization.png"
-			ContentTemplate="{DataTemplate views:LocalizationPage}" />
-		<ShellContent
-			Title="ExampleFontAwesomeUsage"
-			ContentTemplate="{DataTemplate views:ExampleFontAwesomeUsagePage}"
-			Icon="iconfontawesome.png" />
-		<ShellContent
-			Title="ExampleMaterialFontUsage"
-			ContentTemplate="{DataTemplate views:ExampleMaterialFontUsagePage}"
-			Icon="iconmaterial.png" />
-		<ShellContent
-			Title="Lottie"
-			Icon="iconlottie.png"
-			ContentTemplate="{DataTemplate views:LottiePage}" />
-	</TabBar>
+    <TabBar>
+        <!--
+        <ShellContent
+            Title="Main"
+            ContentTemplate="{DataTemplate views:MainPage}"
+            Icon="iconblank.png" />
+        <ShellContent
+            Title="ListDetail"
+            ContentTemplate="{DataTemplate views:ListDetailPage}"
+            Icon="iconlistdetail.png" />
+        <ShellContent
+            Title="Sample"
+            ContentTemplate="{DataTemplate views:SamplePage}"
+            Icon="iconsample.png" />
+        <ShellContent
+            Title="Map"
+            ContentTemplate="{DataTemplate views:MapPage}"
+            Icon="iconmap.png" />
+        <ShellContent
+            Title="Localization"
+            ContentTemplate="{DataTemplate views:LocalizationPage}"
+            Icon="iconlocalization.png" />
+        <ShellContent
+            Title="ExampleFontAwesomeUsage"
+            ContentTemplate="{DataTemplate views:ExampleFontAwesomeUsagePage}"
+            Icon="iconfontawesome.png" />
+        <ShellContent
+            Title="ExampleMaterialFontUsage"
+            ContentTemplate="{DataTemplate views:ExampleMaterialFontUsagePage}"
+            Icon="iconmaterial.png" />
+        <ShellContent
+            Title="Lottie"
+            ContentTemplate="{DataTemplate views:LottiePage}"
+            Icon="iconlottie.png" />
+        -->
+        <ShellContent Title="Cotizaciones" ContentTemplate="{DataTemplate views:ProvidersPage}">
+            <ShellContent.Icon>
+                <FontImageSource
+                    FontFamily="FontAwesomeSolid"
+                    Glyph="&#x24;"
+                    Color="Green" />
+            </ShellContent.Icon>
+        </ShellContent>
+        <ShellContent Title="Info" ContentTemplate="{DataTemplate views:InfoPage}">
+            <ShellContent.Icon>
+                <FontImageSource
+                    FontFamily="FontAwesomeSolid"
+                    Glyph="&#xf129;"
+                    Color="Green" />
+            </ShellContent.Icon>
+        </ShellContent>
+    </TabBar>
 </Shell>
