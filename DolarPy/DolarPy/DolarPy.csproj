@@ -118,6 +118,7 @@
 		<wizardVersion>v1.7.3</wizardVersion>
 		<projectType>MVVMToolkit</projectType>
 		<framework>Tabs</framework>
+		<DefaultLanguage>es</DefaultLanguage>
 	</PropertyGroup>
 
 </Project>
