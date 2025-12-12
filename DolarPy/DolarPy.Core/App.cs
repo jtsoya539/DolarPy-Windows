@@ -17,7 +17,7 @@ namespace DolarPy.Core
            .AsInterfaces()
            .RegisterAsLazySingleton();
 
-            RegisterAppStart<FirstViewModel>();
+            RegisterAppStart<ExchangeRatesViewModel>();
         }
     }
 }
