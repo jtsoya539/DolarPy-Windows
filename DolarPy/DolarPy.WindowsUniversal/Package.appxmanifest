@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="21671jtsoya539.DolarPy" Publisher="CN=AB7251BC-7D3D-4230-A75B-25254D5C1906" Version="1.0.3.0" />
+  <Identity Name="21671jtsoya539.DolarPy" Publisher="CN=AB7251BC-7D3D-4230-A75B-25254D5C1906" Version="1.0.5.0" />
   <mp:PhoneIdentity PhoneProductId="39cd6f7d-1fff-49ca-8b84-08263ef214fe" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>DolarPy.WindowsUniversal</DisplayName>
+    <DisplayName>DolarPy</DisplayName>
     <PublisherDisplayName>jtsoya539</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
